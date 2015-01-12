@@ -12,7 +12,7 @@ class Client(object):
         self.createKeyMoveMap()
         self.createWindow()
         self.resetIO()
-        self.startGame()
+        self.root.mainloop()
     
     def createCommandMap(self):
         self.commandMap = {COMMAND_MESSAGE: self.message,
